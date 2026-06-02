@@ -1,0 +1,26 @@
+{
+  "name": "Danushka Dissanayaka",
+  "role": "Full Stack Engineer",
+  "tagline": "Building scalable web platforms with Angular and .NET.",
+  "stack": ["Angular", "TypeScript", ".NET", "Azure"],
+  "status": "ONLINE",
+  "summary": "Full-stack engineer with a systems-first mindset. I design and build Angular applications backed by reliable .NET services, emphasizing maintainability, performance, and developer experience.",
+  "philosophy": [
+    "Design clean boundaries between UI, services, and data access",
+    "Optimize for maintainability and long-term readability",
+    "Build performance into the architecture, not as an afterthought",
+    "Deliver consistent user experiences across platforms"
+  ],
+  "focus": [
+    "Angular standalone architecture",
+    "API design with .NET and OpenAPI",
+    "Azure cloud-native deployments",
+    "Observability and system health monitoring"
+  ],
+  "contact": {
+    "email": "danushka@example.com",
+    "linkedin": "https://linkedin.com/in/danushka",
+    "github": "https://github.com/danushka",
+    "location": "Remote - Colombo, Sri Lanka"
+  }
+}

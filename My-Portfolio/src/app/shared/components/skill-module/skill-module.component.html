@@ -1,0 +1,8 @@
+<div class="module">
+  <h3>{{ category.category }}</h3>
+  <ul>
+    @for (item of category.modules; track item) {
+      <li><span class="check">[✓]</span>{{ item }}</li>
+    }
+  </ul>
+</div>

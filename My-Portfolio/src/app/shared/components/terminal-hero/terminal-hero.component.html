@@ -1,0 +1,37 @@
+<div class="hero section">
+  <div class="container hero-grid">
+    <div class="terminal" [class.typing]="isTyping()">
+      <div class="terminal-header">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="terminal-title">system.shell</span>
+      </div>
+      <div class="terminal-body">
+        @for (line of lines; track line.id) {
+          <p
+            class="terminal-line"
+            [style.--delay]="line.delay + 's'"
+            [style.--chars]="line.chars"
+          >
+            {{ line.text }}
+          </p>
+        }
+        <span class="cursor" aria-hidden="true"></span>
+      </div>
+    </div>
+
+    <div class="hero-copy">
+      <span class="tag">Full-Stack Command Center</span>
+      <h1>Designing reliable systems, shipping measurable outcomes.</h1>
+      <p>
+        I build scalable web platforms that stay maintainable over time. My focus is clean architecture,
+        clear interfaces, and performance that holds under real-world load.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" routerLink="/projects">View Projects</a>
+        <a class="btn btn-secondary" routerLink="/contact">Contact Me</a>
+      </div>
+    </div>
+  </div>
+</div>

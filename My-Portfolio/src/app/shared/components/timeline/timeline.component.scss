@@ -1,0 +1,58 @@
+.timeline {
+  display: grid;
+  gap: 2rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--border);
+}
+
+.timeline-entry {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  position: relative;
+}
+
+.timeline-marker {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin-top: 0.4rem;
+  box-shadow: 0 0 0 6px rgba(88, 166, 255, 0.1);
+}
+
+.timeline-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+h3 {
+  margin: 0;
+  font-family: var(--font-heading);
+}
+
+.timeline-company,
+.timeline-summary {
+  margin: 0.4rem 0 0;
+  color: var(--text-secondary);
+}
+
+ul {
+  margin: 0.8rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--text-secondary);
+  display: grid;
+  gap: 0.4rem;
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "company": "Nova Systems",
+    "role": "Senior Full Stack Engineer",
+    "duration": "2022 - Present",
+    "location": "Remote",
+    "summary": "Leading the delivery of multi-tenant platforms with Angular frontends and .NET services.",
+    "achievements": [
+      "Re-architected UI into standalone components for faster release cycles",
+      "Designed API gateway patterns to reduce service latency by 32%",
+      "Introduced observability standards across all production services"
+    ]
+  },
+  {
+    "company": "Vertex Digital",
+    "role": "Full Stack Engineer",
+    "duration": "2019 - 2022",
+    "location": "Colombo",
+    "summary": "Built enterprise dashboards and automated workflows for regulated clients.",
+    "achievements": [
+      "Delivered a compliance dashboard used by 12+ business units",
+      "Automated reporting pipelines, reducing manual effort by 60%",
+      "Led migration from legacy MVC to Angular SPA"
+    ]
+  },
+  {
+    "company": "CodeRabbit Labs",
+    "role": "Software Engineer",
+    "duration": "2017 - 2019",
+    "location": "Colombo",
+    "summary": "Worked on SaaS features, analytics, and infrastructure improvements.",
+    "achievements": [
+      "Implemented feature flag system for controlled rollouts",
+      "Improved data ingestion throughput by 45%",
+      "Collaborated on UI design system adoption"
+    ]
+  }
+]

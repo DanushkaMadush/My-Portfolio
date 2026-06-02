@@ -1,0 +1,62 @@
+[
+  {
+    "id": "core-observability",
+    "name": "Core Observability Suite",
+    "description": "Unified monitoring dashboard for multi-tenant SaaS, with alert routing and SLA tracking.",
+    "technologies": ["Angular", "RxJS", "NgRx", "Azure", "SQL Server"],
+    "status": "Production",
+    "githubUrl": "https://github.com/example/observability",
+    "demoUrl": "https://demo.example.com/observability",
+    "featured": true
+  },
+  {
+    "id": "workflow-orchestrator",
+    "name": "Workflow Orchestrator",
+    "description": "Event-driven orchestration service with real-time UI insights and retry handling.",
+    "technologies": ["Angular", "TypeScript", ".NET", "Docker"],
+    "status": "Production",
+    "githubUrl": "https://github.com/example/workflow",
+    "demoUrl": "https://demo.example.com/workflow",
+    "featured": true
+  },
+  {
+    "id": "finops-dashboard",
+    "name": "FinOps Governance Dashboard",
+    "description": "Cloud cost governance portal with budget guardrails and automated recommendations.",
+    "technologies": ["Angular", "SCSS", "Azure", "SQL Server"],
+    "status": "In Development",
+    "githubUrl": "https://github.com/example/finops",
+    "demoUrl": "https://demo.example.com/finops",
+    "featured": true
+  },
+  {
+    "id": "api-portal",
+    "name": "API Developer Portal",
+    "description": "Internal portal for API discovery, documentation, and key management.",
+    "technologies": ["Angular", "TypeScript", ".NET", "OpenAPI"],
+    "status": "Production",
+    "githubUrl": "https://github.com/example/api-portal",
+    "demoUrl": "https://demo.example.com/api-portal",
+    "featured": false
+  },
+  {
+    "id": "incident-response",
+    "name": "Incident Response Console",
+    "description": "Command center for on-call triage, enriched with live system context.",
+    "technologies": ["Angular", "RxJS", "Azure", "Docker"],
+    "status": "In Development",
+    "githubUrl": "https://github.com/example/incident",
+    "demoUrl": "https://demo.example.com/incident",
+    "featured": false
+  },
+  {
+    "id": "legacy-migration",
+    "name": "Legacy Modernization Toolkit",
+    "description": "Automation suite to migrate legacy services into containerized infrastructure.",
+    "technologies": [".NET", "Docker", "Azure", "SQL Server"],
+    "status": "Archived",
+    "githubUrl": "https://github.com/example/migration",
+    "demoUrl": "https://demo.example.com/migration",
+    "featured": false
+  }
+]

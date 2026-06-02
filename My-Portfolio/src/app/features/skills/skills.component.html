@@ -1,0 +1,15 @@
+<section class="section">
+  <div class="container">
+    <app-section-header
+      eyebrow="System Modules"
+      title="Technical skill set"
+      subtitle="A snapshot of the technologies used to deliver production-grade systems."
+    />
+
+    <div class="skills-grid">
+      @for (category of categories(); track category.category) {
+        <app-skill-module [category]="category" />
+      }
+    </div>
+  </div>
+</section>

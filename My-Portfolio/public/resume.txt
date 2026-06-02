@@ -1,0 +1,21 @@
+Danushka Dissanayaka - Resume Placeholder
+
+Full Stack Engineer
+
+Summary
+Systems-first engineer focused on maintainable Angular frontends and reliable .NET services.
+
+Core Skills
+- Angular, TypeScript, RxJS
+- ASP.NET Core, REST APIs
+- Azure, Docker, CI/CD
+
+Experience
+- Senior Full Stack Engineer, Nova Systems (2022 - Present)
+- Full Stack Engineer, Vertex Digital (2019 - 2022)
+- Software Engineer, CodeRabbit Labs (2017 - 2019)
+
+Contact
+Email: danushka@example.com
+LinkedIn: https://linkedin.com/in/danushka
+GitHub: https://github.com/danushka

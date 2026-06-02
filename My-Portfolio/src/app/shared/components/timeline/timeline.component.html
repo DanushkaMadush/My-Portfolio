@@ -1,0 +1,20 @@
+<div class="timeline">
+  @for (entry of entries; track entry.company) {
+    <article class="timeline-entry">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <div class="timeline-title">
+          <h3>{{ entry.role }}</h3>
+          <span>{{ entry.duration }}</span>
+        </div>
+        <p class="timeline-company">{{ entry.company }} · {{ entry.location }}</p>
+        <p class="timeline-summary">{{ entry.summary }}</p>
+        <ul>
+          @for (achievement of entry.achievements; track achievement) {
+            <li>{{ achievement }}</li>
+          }
+        </ul>
+      </div>
+    </article>
+  }
+</div>

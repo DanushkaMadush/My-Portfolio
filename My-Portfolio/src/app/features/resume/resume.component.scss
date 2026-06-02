@@ -1,0 +1,35 @@
+.resume-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.section-card {
+  padding: 1.5rem;
+}
+
+.resume-card {
+  display: grid;
+  gap: 1rem;
+}
+
+h3 {
+  margin-top: 0;
+  font-family: var(--font-heading);
+}
+
+p,
+li {
+  color: var(--text-secondary);
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+.resume-actions {
+  margin-top: 1rem;
+}

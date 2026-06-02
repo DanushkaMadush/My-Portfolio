@@ -1,0 +1,35 @@
+<form [formGroup]="form" (ngSubmit)="submit()" class="contact-form">
+  <label>
+    Name
+    <input type="text" formControlName="name" placeholder="Your name" />
+    @if (form.get('name')?.touched && form.get('name')?.invalid) {
+      <span class="error">Enter at least 2 characters.</span>
+    }
+  </label>
+
+  <label>
+    Email
+    <input type="email" formControlName="email" placeholder="you@example.com" />
+    @if (form.get('email')?.touched && form.get('email')?.invalid) {
+      <span class="error">Enter a valid email.</span>
+    }
+  </label>
+
+  <label>
+    Subject
+    <input type="text" formControlName="subject" placeholder="Project inquiry" />
+    @if (form.get('subject')?.touched && form.get('subject')?.invalid) {
+      <span class="error">Enter at least 3 characters.</span>
+    }
+  </label>
+
+  <label>
+    Message
+    <textarea rows="5" formControlName="message" placeholder="Tell me about your project"></textarea>
+    @if (form.get('message')?.touched && form.get('message')?.invalid) {
+      <span class="error">Enter at least 10 characters.</span>
+    }
+  </label>
+
+  <button class="btn btn-primary" type="submit">Send Message</button>
+</form>

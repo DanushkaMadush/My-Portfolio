@@ -1,0 +1,55 @@
+<section class="section">
+  <div class="container">
+    <app-section-header
+      eyebrow="Projects"
+      title="Production-ready work"
+      subtitle="Search, filter, and inspect projects built with a systems-first approach."
+    />
+
+    <div class="filters section-card">
+      <div class="filter">
+        <label for="search">Search</label>
+        <input
+          id="search"
+          type="search"
+          placeholder="Search projects"
+          [value]="searchTerm()"
+          (input)="updateSearch($any($event.target).value)"
+        />
+      </div>
+      <div class="filter">
+        <label for="status">Status</label>
+        <select
+          id="status"
+          [value]="statusFilter()"
+          (change)="updateStatus($any($event.target).value)"
+        >
+          @for (status of statuses; track status) {
+            <option [value]="status">{{ status }}</option>
+          }
+        </select>
+      </div>
+      <div class="filter">
+        <label for="tech">Technology</label>
+        <select
+          id="tech"
+          [value]="techFilter()"
+          (change)="updateTech($any($event.target).value)"
+        >
+          @for (item of techOptions(); track item) {
+            <option [value]="item">{{ item }}</option>
+          }
+        </select>
+      </div>
+      <button class="btn btn-secondary" type="button" (click)="resetFilters()">
+        Reset filters
+      </button>
+    </div>
+
+    <div class="project-grid">
+      @for (project of filteredProjects(); track project.id) {
+        <app-project-card [project]="project" />
+      }
+    </div>
+  </div>
+</section>

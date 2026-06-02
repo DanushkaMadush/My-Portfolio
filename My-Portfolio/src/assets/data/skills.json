@@ -1,0 +1,26 @@
+[
+  {
+    "category": "Frontend",
+    "modules": ["Angular", "TypeScript", "RxJS", "NgRx", "SCSS", "Vite"]
+  },
+  {
+    "category": "Backend",
+    "modules": ["ASP.NET Core", "REST APIs", "gRPC", "Entity Framework", "CQRS"]
+  },
+  {
+    "category": "Database",
+    "modules": ["SQL Server", "PostgreSQL", "Redis", "Indexing", "Performance tuning"]
+  },
+  {
+    "category": "Cloud",
+    "modules": ["Azure", "App Service", "Azure Functions", "Storage", "Key Vault"]
+  },
+  {
+    "category": "DevOps",
+    "modules": ["Docker", "CI/CD", "GitHub Actions", "Terraform", "Monitoring"]
+  },
+  {
+    "category": "Tools",
+    "modules": ["VS Code", "Git", "Postman", "Figma", "Jira"]
+  }
+]

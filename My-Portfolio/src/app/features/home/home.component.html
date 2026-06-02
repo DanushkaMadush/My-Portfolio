@@ -1,0 +1,46 @@
+<app-terminal-hero
+  [name]="profile()?.name || 'Danushka Dissanayaka'"
+  [role]="profile()?.role || 'Full Stack Engineer'"
+  [stack]="profile()?.stack || ['Angular', 'TypeScript', '.NET']"
+  [status]="profile()?.status || 'ONLINE'"
+/>
+
+<section class="section section-muted">
+  <div class="container intro">
+    <app-section-header
+      eyebrow="Overview"
+      title="Engineering systems that scale"
+      subtitle="Full-stack engineer focused on clean architecture, maintainable codebases, and reliable user experiences."
+    />
+    <div class="intro-grid">
+      <p>
+        I build Angular frontends and .NET backends that remain predictable under pressure. The goal is
+        always the same: clear abstractions, resilient infrastructure, and product-ready interfaces.
+      </p>
+      <p>
+        My approach blends system design with pragmatic delivery. From UI composition to cloud
+        deployment, each layer is designed to stay understandable for teams long after launch.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <app-section-header
+      eyebrow="Featured"
+      title="Selected projects"
+      subtitle="A snapshot of recent work focused on scalability, reliability, and developer experience."
+    />
+
+    <div class="project-grid">
+      @for (project of featuredProjects(); track project.id) {
+        <app-project-card [project]="project" />
+      }
+    </div>
+
+    <div class="cta-row">
+      <a class="btn btn-secondary" routerLink="/projects">View full catalog</a>
+    </div>
+  </div>
+</section>

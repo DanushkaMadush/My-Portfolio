@@ -1,0 +1,28 @@
+<section class="section">
+  <div class="container">
+    <app-section-header
+      eyebrow="Resume"
+      title="Professional summary"
+      subtitle="A concise overview of engineering strengths, focus areas, and delivery style."
+    />
+
+    <div class="resume-grid">
+      <div class="section-card resume-card">
+        <h3>Career Summary</h3>
+        <p>{{ profile()?.summary }}</p>
+        <div class="resume-actions">
+          <a class="btn btn-primary" href="/resume.txt" download>Download Resume</a>
+        </div>
+      </div>
+
+      <div class="section-card">
+        <h3>Skills Overview</h3>
+        <ul>
+          @for (item of profile()?.focus || []; track item) {
+            <li>{{ item }}</li>
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

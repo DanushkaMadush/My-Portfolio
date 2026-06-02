@@ -1,0 +1,22 @@
+<article class="project-card">
+  <div class="project-header">
+    <h3>{{ project.name }}</h3>
+    <span class="status" [class.archived]="project.status === 'Archived'">
+      {{ project.status }}
+    </span>
+  </div>
+  <p>{{ project.description }}</p>
+  <div class="tech">
+    @for (item of project.technologies; track item) {
+      <span>{{ item }}</span>
+    }
+  </div>
+  <div class="actions">
+    <a class="btn btn-secondary" [href]="project.githubUrl" target="_blank" rel="noopener">
+      GitHub
+    </a>
+    <a class="btn btn-primary" [href]="project.demoUrl" target="_blank" rel="noopener">
+      Live Demo
+    </a>
+  </div>
+</article>

@@ -1,0 +1,52 @@
+<header class="nav" [class.nav-scrolled]="isScrolled()">
+  <div class="nav-inner container">
+    <a class="brand" routerLink="/" (click)="closeMenu()" aria-label="Homepage">
+      <span class="brand-mark">dev://</span>
+      <span class="brand-text">Portfolio</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      @for (item of navItems; track item.path) {
+        <a
+          [routerLink]="item.path"
+          routerLinkActive="active"
+          (click)="closeMenu()"
+          >{{ item.label }}</a
+        >
+      }
+    </nav>
+
+    <button
+      class="nav-toggle"
+      type="button"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="isMenuOpen()"
+      aria-controls="mobile-nav"
+      aria-label="Toggle navigation"
+    >
+      <span class="nav-toggle-line"></span>
+      <span class="nav-toggle-line"></span>
+      <span class="nav-toggle-line"></span>
+    </button>
+  </div>
+
+  <div
+    class="mobile-nav"
+    [class.open]="isMenuOpen()"
+    id="mobile-nav"
+    role="dialog"
+    aria-modal="true"
+  >
+    <div class="mobile-nav-inner">
+      <div class="mobile-header">
+        <span>Navigate</span>
+        <button class="close" type="button" (click)="closeMenu()">Close</button>
+      </div>
+      <nav class="mobile-links" aria-label="Mobile">
+        @for (item of navItems; track item.path) {
+          <a [routerLink]="item.path" (click)="closeMenu()">{{ item.label }}</a>
+        }
+      </nav>
+    </div>
+  </div>
+</header>

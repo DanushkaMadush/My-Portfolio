@@ -1,0 +1,32 @@
+<section class="section">
+  <div class="container">
+    <app-section-header
+      eyebrow="About"
+      title="System-first engineering"
+      subtitle="A developer portfolio centered on maintainability, clarity, and long-term product health."
+    />
+
+    <div class="about-grid">
+      <div class="section-card">
+        <h3>Overview</h3>
+        <p>{{ profile()?.summary }}</p>
+      </div>
+      <div class="section-card">
+        <h3>Engineering Philosophy</h3>
+        <ul>
+          @for (item of philosophy(); track item) {
+            <li>{{ item }}</li>
+          }
+        </ul>
+      </div>
+      <div class="section-card">
+        <h3>Current Focus</h3>
+        <ul>
+          @for (item of focus(); track item) {
+            <li>{{ item }}</li>
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

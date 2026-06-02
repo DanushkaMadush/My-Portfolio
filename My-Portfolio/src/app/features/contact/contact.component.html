@@ -1,0 +1,39 @@
+<section class="section">
+  <div class="container">
+    <app-section-header
+      eyebrow="Contact"
+      title="Let's build something reliable"
+      subtitle="Reach out to discuss system design, frontend delivery, or full-stack execution."
+    />
+
+    <div class="contact-grid">
+      <app-contact-form class="section-card" />
+
+      @if (profile(); as profileData) {
+        <div class="contact-details">
+          <div class="section-card">
+            <h3>Direct channels</h3>
+            <ul>
+              <li>
+                Email:
+                <a [href]="'mailto:' + profileData.contact.email">{{ profileData.contact.email }}</a>
+              </li>
+              <li>
+                LinkedIn:
+                <a [href]="profileData.contact.linkedin" target="_blank" rel="noopener">Profile</a>
+              </li>
+              <li>
+                GitHub:
+                <a [href]="profileData.contact.github" target="_blank" rel="noopener">Repository</a>
+              </li>
+            </ul>
+          </div>
+          <div class="section-card">
+            <h3>Location</h3>
+            <p>{{ profileData.contact.location }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

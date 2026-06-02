@@ -1,0 +1,25 @@
+.module {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+h3 {
+  margin: 0 0 1rem;
+  font-family: var(--font-heading);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.check {
+  color: var(--success);
+  margin-right: 0.5rem;
+}
