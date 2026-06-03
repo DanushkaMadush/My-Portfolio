@@ -1,22 +1,70 @@
 <article class="project-card">
-  <div class="project-header">
-    <h3>{{ project.name }}</h3>
-    <span class="status" [class.archived]="project.status === 'Archived'">
-      {{ project.status }}
-    </span>
-  </div>
-  <p>{{ project.description }}</p>
-  <div class="tech">
-    @for (item of project.technologies; track item) {
-      <span>{{ item }}</span>
+
+  <!-- Left: Image -->
+  <div class="project-image">
+    @if (project.imageUrl) {
+      <img [src]="project.imageUrl" [alt]="project.name + ' screenshot'" />
+    } @else {
+      <div class="project-image-placeholder">
+        <div class="placeholder-grid">
+          @for (cell of [].constructor(12); track $index) {
+            <div class="placeholder-cell"></div>
+          }
+        </div>
+        <span class="placeholder-label">{{ project.name }}</span>
+      </div>
     }
   </div>
-  <div class="actions">
-    <a class="btn btn-secondary" [href]="project.githubUrl" target="_blank" rel="noopener">
-      GitHub
-    </a>
-    <a class="btn btn-primary" [href]="project.demoUrl" target="_blank" rel="noopener">
-      Live Demo
-    </a>
+
+  <!-- Right: Content -->
+  <div class="project-content">
+
+    <div class="project-header">
+      <div class="project-header-left">
+        <h3>{{ project.name }}</h3>
+        <div class="project-meta">
+          <span class="status" 
+            [class.status--production]="project.status === 'Production'"
+            [class.status--completed]="project.status === 'Completed'"
+            [class.status--personal]="project.status === 'Personal'"
+            [class.status--wip]="project.status === 'In Development'"
+            [class.status--archived]="project.status === 'Archived'">
+            {{ project.status }}
+          </span>
+          <span class="type-badge type-badge--{{ project.type }}">
+            {{ project.type }}
+          </span>
+        </div>
+      </div>
+      @if (project.company) {
+        <span class="project-company">{{ project.company }}</span>
+      }
+    </div>
+
+    <p class="project-description">{{ project.description }}</p>
+
+    <div class="tech">
+      @for (item of project.technologies; track item) {
+        <span class="tech-tag">{{ item }}</span>
+      }
+    </div>
+
+    <div class="actions">
+      @if (project.githubUrl) {
+        <a class="btn btn-secondary" [href]="project.githubUrl" target="_blank" rel="noopener">
+          GitHub
+        </a>
+      } @else {
+        <span class="btn btn-ghost" title="Private / enterprise repository">
+          Private Repo
+        </span>
+      }
+      @if (project.demoUrl) {
+        <a class="btn btn-primary" [href]="project.demoUrl" target="_blank" rel="noopener">
+          Live Demo
+        </a>
+      }
+    </div>
+
   </div>
 </article>
