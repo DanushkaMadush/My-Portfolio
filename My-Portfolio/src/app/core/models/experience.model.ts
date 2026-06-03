@@ -5,4 +5,6 @@ export interface ExperienceEntry {
   location: string;
   summary: string;
   achievements: string[];
+  type?: string;
+  stack?: string;
 }
