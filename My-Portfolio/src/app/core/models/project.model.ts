@@ -1,4 +1,5 @@
-export type ProjectStatus = 'Production' | 'In Development' | 'Archived';
+export type ProjectStatus = 'Production' | 'Completed' | 'Personal' | 'In Development' | 'Archived';
+export type ProjectType = 'professional' | 'academic' | 'personal';
 
 export interface Project {
   id: string;
@@ -6,7 +7,10 @@ export interface Project {
   description: string;
   technologies: string[];
   status: ProjectStatus;
-  githubUrl: string;
-  demoUrl: string;
+  type: ProjectType;
+  company?: string;
+  githubUrl: string | null;
+  demoUrl: string | null;
   featured: boolean;
+  imageUrl?: string | null;
 }
