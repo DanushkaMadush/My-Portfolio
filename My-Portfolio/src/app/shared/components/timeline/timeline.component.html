@@ -4,8 +4,13 @@
       <div class="timeline-marker"></div>
       <div class="timeline-content">
         <div class="timeline-title">
-          <h3>{{ entry.role }}</h3>
-          <span>{{ entry.duration }}</span>
+          <div class="timeline-title-left">
+            <h3>{{ entry.role }}</h3>
+            @if (entry.type === 'internship') {
+              <span class="entry-badge">Internship</span>
+            }
+          </div>
+          <span class="timeline-duration">{{ entry.duration }}</span>
         </div>
         <p class="timeline-company">{{ entry.company }} · {{ entry.location }}</p>
         <p class="timeline-summary">{{ entry.summary }}</p>
@@ -14,6 +19,13 @@
             <li>{{ achievement }}</li>
           }
         </ul>
+        @if (entry.stack?.length) {
+          <div class="timeline-stack">
+            @for (tech of entry.stack; track tech) {
+              <span class="stack-tag">{{ tech }}</span>
+            }
+          </div>
+        }
       </div>
     </article>
   }
