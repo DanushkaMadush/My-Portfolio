@@ -1,38 +1,33 @@
 [
   {
-    "company": "Nova Systems",
-    "role": "Senior Full Stack Engineer",
-    "duration": "2022 - Present",
-    "location": "Remote",
-    "summary": "Leading the delivery of multi-tenant platforms with Angular frontends and .NET services.",
+    "company": "Courtaulds Trade Company",
+    "role": "Associate Software Engineer",
+    "duration": "May 2025 — Present",
+    "location": "Colombo, Sri Lanka",
+    "type": "full-time",
+    "summary": "Building and owning full-stack enterprise systems across supplier-facing portals and internal business applications in a cross-functional Agile team.",
     "achievements": [
-      "Re-architected UI into standalone components for faster release cycles",
-      "Designed API gateway patterns to reduce service latency by 32%",
-      "Introduced observability standards across all production services"
-    ]
+      "Engineered 3 full-stack modules across supplier-facing and internal systems using .NET Core, Angular, SQL Server, and Entity Framework Core",
+      "Delivered ~20% performance improvement on critical data access workflows by optimizing SQL stored procedures and refactoring EF Core query patterns",
+      "Proposed and led decomposition of a legacy monolithic application into a microservices-based structure — separating the supplier portal and internal modules into independent services",
+      "Built real-time notification features using SignalR/WebSockets, reducing repetitive back-and-forth communication between teams and suppliers",
+      "Designed secure RESTful APIs with JWT authentication and role-based authorization across multiple enterprise applications",
+      "Integrated SAP services and third-party APIs to automate data exchange and reduce manual entry points across business processes"
+    ],
+    "stack": [".NET Core", "Angular", "SQL Server", "Entity Framework Core", "SignalR", "JWT", "SAP Integration"]
   },
   {
-    "company": "Vertex Digital",
-    "role": "Full Stack Engineer",
-    "duration": "2019 - 2022",
-    "location": "Colombo",
-    "summary": "Built enterprise dashboards and automated workflows for regulated clients.",
+    "company": "Codeolima (PVT) LTD",
+    "role": "Intern Full Stack Developer",
+    "duration": "May 2024 — May 2025",
+    "location": "Colombo, Sri Lanka",
+    "type": "internship",
+    "summary": "Contributed to the backend and deployment of ChamberSkills, a live business portal for course management and user inquiries.",
     "achievements": [
-      "Delivered a compliance dashboard used by 12+ business units",
-      "Automated reporting pipelines, reducing manual effort by 60%",
-      "Led migration from legacy MVC to Angular SPA"
-    ]
-  },
-  {
-    "company": "CodeRabbit Labs",
-    "role": "Software Engineer",
-    "duration": "2017 - 2019",
-    "location": "Colombo",
-    "summary": "Worked on SaaS features, analytics, and infrastructure improvements.",
-    "achievements": [
-      "Implemented feature flag system for controlled rollouts",
-      "Improved data ingestion throughput by 45%",
-      "Collaborated on UI design system adoption"
-    ]
+      "Built and contributed to RESTful APIs powering the admin panel and public-facing inquiry workflows",
+      "Supported AWS and Docker-based deployment, contributing to the successful go-live of the platform",
+      "Developed cross-platform mobile features using Flutter and Expo"
+    ],
+    "stack": ["Node.js", "React", "Express", "MongoDB", "Flutter", "Expo", "AWS", "Docker"]
   }
 ]
