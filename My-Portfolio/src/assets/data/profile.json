@@ -2,25 +2,26 @@
   "name": "Danushka Dissanayaka",
   "role": "Full Stack Engineer",
   "tagline": "Building scalable web platforms with Angular and .NET.",
-  "stack": ["Angular", "TypeScript", ".NET", "Azure"],
+  "stack": ["Angular", ".NET Core", "SQL Server"],
   "status": "ONLINE",
-  "summary": "Full-stack engineer with a systems-first mindset. I design and build Angular applications backed by reliable .NET services, emphasizing maintainability, performance, and developer experience.",
+  "summary": "Associate Software Engineer with 2+ years of enterprise experience building full-stack systems across .NET Core, Angular, and SQL Server. I've led real architectural work — decomposing a legacy monolith into microservices, building supplier-facing portals, and cutting data access times by ~20%. Open to backend, full-stack, or freelance engagements where clean architecture and delivery consistency matter.",
   "philosophy": [
-    "Design clean boundaries between UI, services, and data access",
-    "Optimize for maintainability and long-term readability",
-    "Build performance into the architecture, not as an afterthought",
-    "Deliver consistent user experiences across platforms"
+    "Let the architecture absorb complexity so the code stays clean",
+    "Performance is a design decision, not a hotfix",
+    "Build boundaries that make systems easier to evolve",
+    "Ship working software, then make it excellent"
   ],
   "focus": [
-    "Angular standalone architecture",
-    "API design with .NET and OpenAPI",
-    "Azure cloud-native deployments",
-    "Observability and system health monitoring"
+    "Enterprise full-stack with Angular + .NET Core",
+    "Microservices architecture and monolith decomposition",
+    "Real-time systems with SignalR and WebSockets",
+    "API design, JWT auth, and role-based access control",
+    "Cloud deployments with AWS and Docker"
   ],
   "contact": {
-    "email": "danushka@example.com",
-    "linkedin": "https://linkedin.com/in/danushka",
-    "github": "https://github.com/danushka",
+    "email": "danushkamdissanayaka@gmail.com",
+    "linkedin": "http://www.linkedin.com/in/danushka-madushan-dev",
+    "github": "http://github.com/DanushkaMadush",
     "location": "Remote - Colombo, Sri Lanka"
   }
 }
