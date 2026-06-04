@@ -32,6 +32,18 @@
   text-align: right;
 }
 
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+}
+
+.brand-mark {
+  color: var(--accent);
+}
+
 @media (max-width: 700px) {
   .footer-meta {
     text-align: left;
