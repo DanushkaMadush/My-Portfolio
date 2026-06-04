@@ -1,26 +1,32 @@
 [
   {
     "category": "Frontend",
-    "modules": ["Angular", "TypeScript", "RxJS", "NgRx", "SCSS", "Vite"]
+    "icon": "frontend",
+    "modules": ["Angular", "TypeScript", "RxJS", "SCSS", "Bootstrap", "Tailwind CSS"]
   },
   {
     "category": "Backend",
-    "modules": ["ASP.NET Core", "REST APIs", "gRPC", "Entity Framework", "CQRS"]
+    "icon": "backend",
+    "modules": ["ASP.NET Core", "Node.js", "Express.js", "REST APIs", "JWT Auth", "SignalR"]
   },
   {
     "category": "Database",
-    "modules": ["SQL Server", "PostgreSQL", "Redis", "Indexing", "Performance tuning"]
+    "icon": "database",
+    "modules": ["SQL Server", "MongoDB", "Entity Framework Core", "Dapper", "ADO.NET", "Stored Procedures"]
   },
   {
-    "category": "Cloud",
-    "modules": ["Azure", "App Service", "Azure Functions", "Storage", "Key Vault"]
+    "category": "Mobile",
+    "icon": "mobile",
+    "modules": ["Flutter", "Expo", "React Native"]
   },
   {
-    "category": "DevOps",
-    "modules": ["Docker", "CI/CD", "GitHub Actions", "Terraform", "Monitoring"]
+    "category": "DevOps & Cloud",
+    "icon": "devops",
+    "modules": ["Docker", "Docker Compose", "GitHub Actions", "AWS", "CI/CD"]
   },
   {
     "category": "Tools",
-    "modules": ["VS Code", "Git", "Postman", "Figma", "Jira"]
+    "icon": "tools",
+    "modules": ["Git", "Postman", "Swagger", "Figma", "Linux", "VS Code"]
   }
 ]

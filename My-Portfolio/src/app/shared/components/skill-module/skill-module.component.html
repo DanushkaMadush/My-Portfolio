@@ -1,8 +1,20 @@
-<div class="module">
-  <h3>{{ category.category }}</h3>
-  <ul>
-    @for (item of category.modules; track item) {
-      <li><span class="check">[✓]</span>{{ item }}</li>
+<div class="skill-card">
+  <div class="skill-card-header">
+    <span class="skill-icon">
+      @switch (category.icon) {
+        @case ('frontend') { ◈ }
+        @case ('backend')  { ⬡ }
+        @case ('database') { ▦ }
+        @case ('mobile')   { ▣ }
+        @case ('devops')   { ⬢ }
+        @case ('tools')    { ◎ }
+      }
+    </span>
+    <h3>{{ category.category }}</h3>
+  </div>
+  <ul class="skill-list">
+    @for (module of category.modules; track module) {
+      <li>{{ module }}</li>
     }
   </ul>
 </div>
