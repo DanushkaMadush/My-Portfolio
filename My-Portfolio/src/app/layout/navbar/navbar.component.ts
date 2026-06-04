@@ -18,12 +18,12 @@ export class NavbarComponent {
   protected readonly isScrolled = signal(false);
 
   protected readonly navItems: NavItem[] = [
-    { label: 'About', path: '/about' },
+    // { label: 'About', path: '/about' },
     { label: 'Experience', path: '/experience' },
     { label: 'Skills', path: '/skills' },
     { label: 'Projects', path: '/projects' },
     { label: 'Contact', path: '/contact' },
-    { label: 'Resume', path: '/resume' }
+    // { label: 'Resume', path: '/resume' }
   ];
 
   @HostListener('window:scroll')
