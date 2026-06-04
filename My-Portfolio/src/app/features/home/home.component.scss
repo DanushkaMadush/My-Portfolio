@@ -1,8 +1,39 @@
 .intro-grid {
   display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  color: var(--text-secondary);
+  grid-template-columns: 1fr auto;
+  gap: 3rem;
+  align-items: center;
+}
+
+.intro-text {
+  display: grid;
+  gap: 1rem;
+
+  p {
+    margin: 0;
+    color: var(--text-secondary);
+    line-height: 1.7;
+  }
+}
+
+.intro-photo {
+  flex-shrink: 0;
+}
+
+.profile-photo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  border: 2px solid var(--border);
+  display: block;
+  filter: grayscale(20%);
+  transition: filter 0.3s ease;
+
+  &:hover {
+    filter: grayscale(0%);
+  }
 }
 
 .project-grid {
@@ -13,4 +44,21 @@
 
 .cta-row {
   margin-top: 2rem;
+}
+
+@media (max-width: 700px) {
+  .intro-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-photo {
+    display: flex;
+    justify-content: center;
+    order: -1;
+  }
+
+  .profile-photo {
+    width: 140px;
+    height: 140px;
+  }
 }
