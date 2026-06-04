@@ -6,9 +6,10 @@ import { Profile } from '../models/profile.model';
 import { Project } from '../models/project.model';
 import { SkillCategory } from '../models/skill.model';
 import { ExperienceEntry } from '../models/experience.model';
+import { Language } from '../models/language.model';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class PortfolioDataService {
   private readonly basePath = 'assets/data';
@@ -29,5 +30,9 @@ export class PortfolioDataService {
 
   getExperience(): Observable<ExperienceEntry[]> {
     return this.http.get<ExperienceEntry[]>(`${this.basePath}/experience.json`);
+  }
+
+  getLanguages(): Observable<Language[]> {
+    return this.http.get<Language[]>(`${this.basePath}/languages.json`);
   }
 }

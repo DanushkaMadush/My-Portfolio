@@ -18,4 +18,8 @@ export class SkillsComponent {
   protected readonly categories = toSignal(this.dataService.getSkills(), {
     initialValue: []
   });
+
+  protected readonly languages = toSignal(this.dataService.getLanguages(), {
+    initialValue: []
+  });
 }

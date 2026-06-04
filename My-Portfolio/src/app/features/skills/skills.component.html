@@ -1,15 +1,31 @@
 <section class="section">
   <div class="container">
+
+    <app-section-header
+      eyebrow="Languages"
+      title="Programming languages"
+      subtitle="Languages I work in daily and those I reach for when the problem calls for it."
+    />
+    <div class="languages-grid">
+      @for (lang of languages(); track lang.name) {
+        <div class="lang-card" [class.lang-card--secondary]="!lang.primary">
+          <span class="lang-name">{{ lang.name }}</span>
+          <span class="lang-badge">{{ lang.primary ? 'Primary' : 'Familiar' }}</span>
+        </div>
+      }
+    </div>
+
     <app-section-header
       eyebrow="System Modules"
       title="Technical skill set"
       subtitle="A snapshot of the technologies used to deliver production-grade systems."
+      class="skills-header"
     />
-
     <div class="skills-grid">
       @for (category of categories(); track category.category) {
         <app-skill-module [category]="category" />
       }
     </div>
+
   </div>
 </section>

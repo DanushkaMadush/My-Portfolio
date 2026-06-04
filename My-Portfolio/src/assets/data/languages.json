@@ -1,0 +1,8 @@
+[
+  { "name": "C#",         "primary": true  },
+  { "name": "TypeScript", "primary": true  },
+  { "name": "JavaScript", "primary": true  },
+  { "name": "SQL",        "primary": true  },
+  { "name": "Python",     "primary": false },
+  { "name": "Dart",       "primary": false }
+]

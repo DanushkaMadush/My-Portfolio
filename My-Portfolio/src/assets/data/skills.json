@@ -2,17 +2,17 @@
   {
     "category": "Frontend",
     "icon": "frontend",
-    "modules": ["Angular", "TypeScript", "RxJS", "SCSS", "Bootstrap", "Tailwind CSS"]
+    "modules": ["Angular","React", "Bootstrap", "Tailwind CSS"]
   },
   {
     "category": "Backend",
     "icon": "backend",
-    "modules": ["ASP.NET Core", "Node.js", "Express.js", "REST APIs", "JWT Auth", "SignalR"]
+    "modules": ["ASP.NET Core", "Node.js", "Express.js"]
   },
   {
     "category": "Database",
     "icon": "database",
-    "modules": ["SQL Server", "MongoDB", "Entity Framework Core", "Dapper", "ADO.NET", "Stored Procedures"]
+    "modules": ["SQL Server", "MongoDB", "PostgreSQL", "Entity Framework Core", "Dapper", "ADO.NET", "Stored Procedures"]
   },
   {
     "category": "Mobile",
@@ -22,11 +22,11 @@
   {
     "category": "DevOps & Cloud",
     "icon": "devops",
-    "modules": ["Docker", "Docker Compose", "GitHub Actions", "AWS", "CI/CD"]
+    "modules": ["CI/CD", "Docker", "GitHub Actions", "AWS", "Azure"]
   },
   {
     "category": "Tools",
     "icon": "tools",
-    "modules": ["Git", "Postman", "Swagger", "Figma", "Linux", "VS Code"]
+    "modules": ["Git", "Postman", "Swagger", "Figma", "Linux"]
   }
 ]
