@@ -9,13 +9,9 @@
       </div>
       <div class="terminal-body">
         @for (line of lines; track line.id) {
-          <p
-            class="terminal-line"
-            [style.--delay]="line.delay + 's'"
-            [style.--chars]="line.chars"
-          >
-            {{ line.text }}
-          </p>
+        <p class="terminal-line" [style.--delay]="line.delay + 's'" [style.--chars]="line.chars">
+          {{ line.text }}
+        </p>
         }
         <span class="cursor" aria-hidden="true"></span>
       </div>
@@ -30,8 +26,9 @@
     got too big to maintain.
       </p> -->
       <div class="hero-actions">
-        <a class="btn btn-primary" routerLink="/projects">View Projects</a>
         <a class="btn btn-secondary" routerLink="/contact">Contact Me</a>
+        <a class="btn btn-primary" href="assets/Danushka_Madushan.pdf" download>Download Resume</a>
+        <!-- <a class="btn btn-primary" routerLink="/projects">View Projects</a> -->
       </div>
     </div>
   </div>
