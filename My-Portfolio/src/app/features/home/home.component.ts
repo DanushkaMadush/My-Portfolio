@@ -11,10 +11,10 @@ import { ProjectCardComponent } from '../../shared/components/project-card/proje
   selector: 'app-home',
   standalone: true,
   imports: [
-    RouterLink,
+    // RouterLink,
     SectionHeaderComponent,
     TerminalHeroComponent,
-    ProjectCardComponent
+    // ProjectCardComponent
   ],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
