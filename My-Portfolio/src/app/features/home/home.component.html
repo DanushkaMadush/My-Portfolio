@@ -1,35 +1,33 @@
 <app-terminal-hero
-  [name]="profile()?.name || 'Danushka Dissanayaka'"
-  [role]="profile()?.role || 'Full Stack Engineer'"
-  [stack]="profile()?.stack || ['Angular', 'TypeScript', '.NET']"
+  [name]="profile()?.name || 'Danushka Madushan'"
+  [role]="profile()?.role || 'Associate Software Engineer'"
+  [stack]="profile()?.stack || ['.NET Core', 'Angular', 'SQL Server']"
   [status]="profile()?.status || 'ONLINE'"
 />
 
 <section class="section section-muted">
   <div class="container intro">
-    <app-section-header
-      eyebrow="Overview"
-      title="Enterprise systems, clean architecture"
-      subtitle="Associate Software Engineer with 2+ years building full-stack platforms across .NET Core, Angular, and SQL Server."
-    />
+    <div class="intro-top">
+      <app-section-header
+        eyebrow="Overview"
+        title="Enterprise systems, clean architecture"
+        subtitle="Associate Software Engineer with 2+ years building full-stack platforms across .NET Core, Angular, and SQL Server."
+      />
+      <div class="intro-photo">
+        <img src="/assets/Danushka.jpg" alt="Danushka Madushan" class="profile-photo" />
+      </div>
+    </div>
     <div class="intro-grid">
       <div class="intro-text">
         <p>
-          I've worked across the full stack in enterprise environments — from designing secure REST APIs
-          and real-time SignalR features to leading the decomposition of a legacy monolith into
+          I've worked across the full stack in enterprise environments — from designing secure REST
+          APIs and real-time SignalR features to leading the decomposition of a legacy monolith into
           independent services.
         </p>
         <p>
-          I'm open to mid-level backend or full-stack roles, and freelance engagements where
-          clean delivery and long-term maintainability matter.
+          I'm open to mid-level backend or full-stack roles, and freelance engagements where clean
+          delivery and long-term maintainability matter.
         </p>
-      </div>
-      <div class="intro-photo">
-        <img
-          src="/assets/Danushka.jpg"
-          alt="Danushka Madushan"
-          class="profile-photo"
-        />
       </div>
     </div>
   </div>

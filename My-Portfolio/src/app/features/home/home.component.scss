@@ -1,8 +1,15 @@
+.intro-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
 .intro-grid {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 3rem;
-  align-items: center;
+  grid-template-columns: 1fr;
+  gap: 1rem;
 }
 
 .intro-text {
@@ -21,8 +28,8 @@
 }
 
 .profile-photo {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   object-position: top;
@@ -35,7 +42,6 @@
     filter: grayscale(0%);
   }
 }
-
 .project-grid {
   display: grid;
   gap: 1.5rem;
@@ -47,14 +53,14 @@
 }
 
 @media (max-width: 700px) {
-  .intro-grid {
-    grid-template-columns: 1fr;
+  .intro-top {
+    flex-direction: column-reverse;
+    align-items: center;
   }
 
   .intro-photo {
     display: flex;
     justify-content: center;
-    order: -1;
   }
 
   .profile-photo {
