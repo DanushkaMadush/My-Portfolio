@@ -11,27 +11,47 @@
 
       @if (profile(); as profileData) {
         <div class="contact-details">
+
           <div class="section-card">
             <h3>Direct channels</h3>
-            <ul>
+            <ul class="channel-list">
               <li>
-                Email:
-                <a [href]="'mailto:' + profileData.contact.email">{{ profileData.contact.email }}</a>
+                <lucide-icon [img]="Mail" [size]="16" />
+                <a [href]="'mailto:' + profileData.contact.email">
+                  {{ profileData.contact.email }}
+                </a>
               </li>
               <li>
-                LinkedIn:
-                <a [href]="profileData.contact.linkedin" target="_blank" rel="noopener">Profile</a>
+                <lucide-icon [img]="Linkedin" [size]="16" />
+                <a [href]="profileData.contact.linkedin" target="_blank" rel="noopener">
+                  LinkedIn
+                </a>
               </li>
               <li>
-                GitHub:
-                <a [href]="profileData.contact.github" target="_blank" rel="noopener">Repository</a>
+                <lucide-icon [img]="Github" [size]="16" />
+                <a [href]="profileData.contact.github" target="_blank" rel="noopener">
+                  GitHub
+                </a>
               </li>
+              @if (profileData.contact.whatsapp) {
+                <li>
+                  <lucide-icon [img]="MessageCircle" [size]="16" />
+                  <a [href]="profileData.contact.whatsapp" target="_blank" rel="noopener">
+                    WhatsApp
+                  </a>
+                </li>
+              }
             </ul>
           </div>
+
           <div class="section-card">
             <h3>My location</h3>
-            <p>{{ profileData.contact.location }}</p>
+            <div class="location">
+              <lucide-icon [img]="MapPin" [size]="16" />
+              <p>{{ profileData.contact.location }}</p>
+            </div>
           </div>
+
         </div>
       }
     </div>
