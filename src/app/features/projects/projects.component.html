@@ -3,10 +3,10 @@
     <app-section-header
       eyebrow="Projects"
       title="Production-ready work"
-      subtitle="Search, filter, and inspect projects built with a systems-first approach."
+      subtitle=""
     />
 
-    <div class="filters section-card">
+    <!-- <div class="filters section-card">
       <div class="filter">
         <label for="search">Search</label>
         <input
@@ -44,7 +44,7 @@
       <button class="btn btn-secondary" type="button" (click)="resetFilters()">
         Reset filters
       </button>
-    </div>
+    </div> -->
 
     <div class="project-grid">
       @for (project of filteredProjects(); track project.id) {
