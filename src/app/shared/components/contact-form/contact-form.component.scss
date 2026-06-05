@@ -30,3 +30,13 @@ textarea:focus {
   color: #f85149;
   font-size: 0.8rem;
 }
+
+.form-success {
+  color: var(--success);
+  font-size: 0.875rem;
+}
+
+.form-error {
+  color: var(--error, #f85149);
+  font-size: 0.875rem;
+}
