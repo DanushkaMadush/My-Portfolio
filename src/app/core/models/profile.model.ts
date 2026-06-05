@@ -3,7 +3,6 @@ export interface ProfileContact {
   linkedin: string;
   github: string;
   location: string;
-  whatsapp: string;
 }
 
 export interface Profile {
